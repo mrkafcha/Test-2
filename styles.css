@@ -1,0 +1,65 @@
+@font-face {
+    font-weight: 700;
+    font-family: Roboto;
+    src: url("./fonts/Roboto-Bold.ttf");
+}
+
+* {
+    font-family: Roboto, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.square {
+    aspect-ratio: 1 / 1;
+    width: calc(100%);
+    background-color: red;
+    display: flex;
+    max-width: 352px;
+    align-items: center;
+    justify-content: center;
+    animation: colorChange 1.5s infinite;
+}
+
+@keyframes colorChange {
+    from {
+        background-color: #FF0000;
+    ;
+    }
+    33% {
+        background-color: #0500FF;
+    ;
+    }
+    66% {
+        background-color: #52FF00;
+    ;
+    }
+    to {
+        background-color: #FF0000;
+    }
+}
+
+.square:nth-child(1) {
+    background-color: #FF0000;
+    animation-delay: 0s;
+}
+.square:nth-child(2) {
+    background-color: #0500FF;
+    animation-delay: 0.5s;
+}
+.square:nth-child(3) {
+    background-color: #52FF00;
+    animation-delay: 1s;
+}
+.square:nth-child(4) {
+    background-color: #FF0000;
+    animation-delay: 1.5s;
+}
